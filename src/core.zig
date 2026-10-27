@@ -1,5 +1,19 @@
 const std = @import("std");
 
+pub const TokenType = enum {
+    StartTag,
+    EndTag,
+    SelfClosingTag,
+    Text,
+    Attribute,
+    Comment,
+};
+
+pub const Token = struct {
+    type: TokenType,
+    text: []const u8,
+};
+
 pub const XMLNode = struct {
     tag: []const u8,
     attributes: std.StringHashMap([]const u8),

@@ -1,0 +1,9 @@
+# Ignore Zig build artifacts
+.zig-cache/
+zig-out/
+# Ignore build directories
+/build/
+/build-*/
+/release/
+/debug/
+/docgen_tmp/

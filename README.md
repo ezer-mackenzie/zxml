@@ -5,7 +5,7 @@ tokenize a document and build an element tree, but it does not implement or
 validate the full XML specification. Despite the stable API, it is not
 suitable for production use or untrusted input.
 
-The package version is **0.9.0**. The public API and documented behavior are
+The package version is **1.0.0**. The public API and documented behavior are
 stable throughout the 1.x series. This does not imply support for the full XML
 specification or suitability for parsing untrusted input.
 

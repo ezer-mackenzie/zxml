@@ -1,8 +1,8 @@
 # Contributing Guide
 
-Thank you for your interest in contributing to `zxml`. The project is still a
-prototype; small, verifiable changes accompanied by tests are especially
-helpful.
+Thank you for your interest in contributing to `zxml`. The 1.x public API is
+stable for the documented XML subset. Small, verifiable changes accompanied by
+tests are especially helpful.
 
 ## Before you start
 
@@ -24,14 +24,14 @@ zig build test
 zig fmt --check src build.zig
 ```
 
-To run the program:
+To run the program on the bundled example or a chosen XML path:
 
 ```powershell
 zig build run
+zig build run -- parse path\to\input.xml
 ```
 
-For now, the executable processes `docs/example.xml`; accepting a file path
-from the CLI has not yet been implemented.
+Use `--debug` to print the tokenizer and parser trace.
 
 ## Changes and tests
 

@@ -2,10 +2,10 @@
 
 ## Project status
 
-`zxml` is experimental software and does not yet fully implement or validate
-the XML format. Do not rely on it as your sole safeguard when processing
-untrusted documents. In particular, the parser still needs work on validation,
-entities, comments, and other XML constructs.
+`zxml` has a stable 1.x public API for its documented XML subset, but it does
+not fully implement or validate the XML format and is not suitable for
+production use or untrusted documents. Do not rely on it as a security
+safeguard. Unsupported XML constructs are documented in `README.md`.
 
 ## Reporting a vulnerability
 
@@ -26,5 +26,5 @@ time is guaranteed while the project remains in development.
 
 ## Scope
 
-This policy covers the code and files maintained in this repository. There are
-currently no stable releases or defined security support matrix.
+This policy covers the code and files maintained in this repository. There is
+no defined security support matrix or guaranteed response time.
